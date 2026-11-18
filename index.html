@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Francisco Ramirez | Consultoria Executiva em Ensino Superior</title>
+<meta name="description" content="Consultoria executiva para instituições de Ensino Superior: estratégia, gestão acadêmica, regulação, qualidade e desenvolvimento de lideranças.">
+<meta property="og:title" content="Francisco Ramirez | Consultoria Executiva em Ensino Superior">
+<meta property="og:description" content="Gestão institucional com visão integrada.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chicoramirez.com.br">
+<link rel="canonical" href="https://chicoramirez.com.br">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#162A47; --navy-2:#20375A; --wine:#8F3C4D; --cream:#F0ECE7; --white:#fff;
+  --ink:#162A47; --muted:#555B6C; --line:#DDD6CB; --rose:#D9B3BB;
+  --serif:"Libre Baskerville",Cambria,Georgia,serif;
+  --sans:"Montserrat",Calibri,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.65;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--wine);outline-offset:3px}
+.dark :focus-visible{outline-color:var(--white)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.2;margin:0}
+h2{font-size:clamp(28px,4vw,40px);margin-bottom:18px}
+h3{font-size:20px}
+p{margin:0 0 1em}
+.lead{font-size:19px;max-width:62ch;color:var(--muted)}
+section{padding:96px 0}
+.dark{background:var(--navy);color:var(--white)}
+.dark .lead{color:#D5DAE3}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:var(--navy);color:var(--white)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{text-decoration:none;line-height:1.1}
+.brand b{display:block;font-size:17px;letter-spacing:.35em;font-weight:600}
+.brand span{font-size:11px;letter-spacing:.08em;color:#C7CEDA}
+nav{display:flex;align-items:center;gap:28px;font-size:14px}
+nav a{text-decoration:none;color:#E4E8EF}
+nav a:hover{color:var(--white);text-decoration:underline;text-underline-offset:6px}
+.btn{display:inline-block;padding:14px 26px;font:600 15px var(--sans);text-decoration:none;background:var(--wine);color:var(--white);border:2px solid var(--wine);border-radius:2px}
+.btn:hover{background:#7A3040;border-color:#7A3040}
+.btn.ghost{background:transparent;border-color:currentColor}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+nav .btn{padding:10px 18px;font-size:14px;color:var(--white)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:110px 0 120px}
+.hero::after{content:"R";position:absolute;right:-1vw;bottom:-0.28em;font:700 clamp(320px,46vw,640px)/1 var(--serif);color:var(--navy-2);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(36px,6vw,64px);max-width:15ch;margin-bottom:26px}
+.hero .lead{margin-bottom:38px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+
+/* desafio */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.questions{list-style:none;margin:0;padding:0}
+.questions li{padding:18px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:18px}
+.questions li:first-child{border-top:1px solid var(--line)}
+.questions h3{font-size:15px;font-family:var(--sans);font-weight:600;color:var(--wine);margin-bottom:6px}
+
+/* frentes */
+.fronts{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;margin-top:48px}
+.front{border-top:2px solid var(--navy);padding:24px 0 28px}
+.front p{color:var(--muted);margin:10px 0 14px}
+details summary{cursor:pointer;font-weight:600;font-size:15px;color:var(--wine);list-style:none;display:inline-block}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:" +"}
+details[open] summary::after{content:" \2212"}
+details ul{margin:14px 0 0;padding-left:20px;font-size:15.5px}
+details li{margin-bottom:6px}
+.result{margin-top:12px;padding:22px 26px;background:var(--navy);color:var(--white);font-family:var(--serif);font-style:italic;font-size:18px}
+
+/* quem */
+.who{background:var(--white)}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:44px}
+.cols3 h3{margin-bottom:8px}
+.cols3 p{color:var(--muted);font-size:16px;margin:0}
+.cols3.four{grid-template-columns:repeat(4,1fr)}
+.who .audience{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:44px}
+.audience div{padding:28px;background:var(--cream)}
+.audience p{margin:8px 0 0;color:var(--muted);font-size:16px}
+.who h2+p{max-width:62ch}
+.sub{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--wine);margin:56px 0 0}
+
+/* formatos */
+.formats{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:44px}
+.formats>div{border-top:2px solid var(--wine);padding-top:18px}
+.formats p{font-size:16px;color:var(--muted);margin:8px 0 10px}
+.formats em{font-size:14.5px;color:var(--ink);font-style:italic}
+
+/* metodo */
+.steps{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-top:64px}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:44px;height:44px;border-radius:50%;background:var(--wine);color:var(--white);display:grid;place-items:center;font:700 18px var(--serif)}
+.steps li::after{content:"";position:absolute;top:22px;left:56px;right:-20px;height:1px;background:#4A5E7E}
+.steps li:last-child::after{display:none}
+.steps h3{margin-bottom:8px}
+.steps p{font-size:16px;color:#D5DAE3;margin:0 0 10px}
+.steps small{font-size:14px;color:var(--rose)}
+.begin{margin-top:64px;padding-top:40px;border-top:1px solid #3A4F70}
+.begin h3{font-size:22px;margin-bottom:6px}
+blockquote{margin:44px 0 0;font:italic 400 clamp(21px,2.6vw,28px)/1.45 var(--serif);max-width:30em}
+
+/* sobre */
+.about{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:start}
+.facts{display:flex;gap:40px;margin:28px 0}
+.facts b{display:block;font:400 48px/1 var(--serif);color:var(--wine)}
+.facts span{font-size:14px;color:var(--muted);display:block;max-width:15ch;margin-top:6px}
+.about dl{margin:0 0 20px}
+.about dt{font-weight:600;font-size:15px;color:var(--wine);margin-top:18px}
+.about dd{margin:2px 0 0;color:var(--muted);font-size:16px}
+.timeline{list-style:none;margin:0;padding:0;background:var(--white);border:1px solid var(--line)}
+.timeline li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:20px 26px;border-bottom:1px solid var(--line)}
+.timeline li:last-child{border-bottom:0}
+.timeline time{font:700 15px var(--serif);color:var(--wine)}
+.timeline b{display:block;font-size:16px}
+.timeline span{font-size:14.5px;color:var(--muted)}
+
+/* contato */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.contact ul{list-style:none;margin:0;padding:0}
+.contact li{padding:16px 0;border-bottom:1px solid #3A4F70}
+.contact li small{display:block;font-size:13.5px;color:var(--rose)}
+.contact li a{font-size:19px;text-decoration:none;border-bottom:1px solid transparent}
+.contact li a:hover{border-bottom-color:currentColor}
+.motto{font:italic 400 clamp(22px,2.8vw,30px)/1.5 var(--serif)}
+.motto span{display:block}
+footer{background:var(--navy);color:#AEB7C7;font-size:14px;padding:28px 0;border-top:1px solid #2E4466}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:900px){
+  section{padding:68px 0}
+  .split,.about,.contact .wrap,.fronts,.who .audience{grid-template-columns:1fr;gap:36px}
+  .cols3,.cols3.four{grid-template-columns:1fr 1fr;gap:28px}
+  .formats,.steps{grid-template-columns:1fr 1fr}
+  .steps li::after{display:none}
+  nav a:not(.btn){display:none}
+  .hero{padding:70px 0 90px}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .formats,.steps,.cols3,.cols3.four{grid-template-columns:1fr}
+  .timeline li{grid-template-columns:1fr;gap:2px}
+  .brand span{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#topo" aria-label="Ramirez, início"><b>RAMIREZ</b><span>Consultoria Executiva em Ensino Superior</span></a>
+    <nav aria-label="Principal">
+      <a href="#atuacao">Atuação</a>
+      <a href="#metodo">Método</a>
+      <a href="#sobre">Sobre</a>
+      <a class="btn" href="#contato">Fale comigo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+<section class="hero dark" style="padding-top:110px">
+  <div class="wrap">
+    <h1>Gestão institucional com visão integrada.</h1>
+    <p class="lead">Consultoria executiva para instituições de Ensino Superior que precisam alinhar direção, operação acadêmica, qualidade e pessoas para avançar com consistência.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:chicoramirez.consultoria@gmail.com?subject=Conversa%20inicial">Agendar uma conversa</a>
+      <a class="btn ghost" href="#atuacao">Ver como atuo</a>
+    </div>
+  </div>
+</section>
+
+<section id="desafio">
+  <div class="wrap split">
+    <div>
+      <h2>Dirigir com clareza, em meio a muitas pressões</h2>
+      <p class="lead">Regulação, sustentabilidade, qualidade acadêmica e pessoas pedem decisões ao mesmo tempo. Apoio mantenedoras, dirigentes e equipes a integrar estratégia, gestão acadêmica, qualidade e processos, com prioridades claras, instrumentos de acompanhamento e foco na implementação.</p>
+    </div>
+    <ul class="questions">
+      <li>As prioridades da direção chegam à operação dos cursos?</li>
+      <li>Os indicadores orientam decisões ou apenas relatórios?</li>
+      <li>A instituição está preparada para avaliações e mudanças regulatórias?</li>
+      <li>Coordenadores e equipes têm clareza de papel e autonomia para decidir?</li>
+    </ul>
+  </div>
+</section>
+
+<section id="atuacao" style="padding-top:0">
+  <div class="wrap">
+    <h2>Quatro frentes de atuação</h2>
+    <p class="lead">Do planejamento da direção à rotina dos coordenadores, o trabalho se organiza em frentes que se complementam.</p>
+    <div class="fronts">
+      <div class="front">
+        <h3>Estratégia e gestão institucional</h3>
+        <p>Apoio a dirigentes e mantenedoras na leitura do cenário, na definição de prioridades e na estruturação da gestão.</p>
+        <details><summary>Possíveis entregas</summary><ul>
+          <li>Diagnóstico institucional e maturidade de gestão</li>
+          <li>Planejamento estratégico e planos de ação</li>
+          <li>Governança, papéis e fóruns decisórios</li>
+          <li>Indicadores de desempenho e acompanhamento</li>
+          <li>Projetos de expansão e desenvolvimento institucional</li></ul></details>
+      </div>
+      <div class="front">
+        <h3>Gestão acadêmica e desenvolvimento organizacional</h3>
+        <p>Aprimoramento dos processos acadêmicos, das responsabilidades e da integração entre áreas, cursos e unidades.</p>
+        <details><summary>Possíveis entregas</summary><ul>
+          <li>Análise e redesenho de processos acadêmicos</li>
+          <li>Fluxos, atribuições e responsabilidades</li>
+          <li>Gestão de cursos e acompanhamento de resultados</li>
+          <li>Integração entre áreas acadêmicas e administrativas</li>
+          <li>Rotinas de gestão e monitoramento</li></ul></details>
+      </div>
+      <div class="front">
+        <h3>Regulação, qualidade e inovação educacional</h3>
+        <p>Conexão entre regulação, avaliação e organização acadêmica e a estratégia da instituição.</p>
+        <details><summary>Possíveis entregas</summary><ul>
+          <li>Cenários regulatórios e impactos institucionais</li>
+          <li>Organização das ofertas presencial, semipresencial e EAD</li>
+          <li>Processos de avaliação e qualidade</li>
+          <li>Evidências, indicadores e planos de melhoria</li>
+          <li>Inovação de processos e modelos acadêmicos</li></ul></details>
+      </div>
+      <div class="front">
+        <h3>Formação e desenvolvimento de lideranças</h3>
+        <p>Desenvolvimento de gestores, coordenadores e equipes para liderar com visão institucional e capacidade de mobilização.</p>
+        <details><summary>Possíveis entregas</summary><ul>
+          <li>Formação de coordenadores e gestores acadêmicos</li>
+          <li>Competências de liderança e gestão</li>
+          <li>Mentoria executiva para profissionais do Ensino Superior</li>
+          <li>Oficinas de planejamento, indicadores e decisão</li>
+          <li>Alinhamento de equipes e cultura de gestão</li></ul></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="who" id="quem">
+  <div class="wrap">
+    <h2>Para quem atuo e como atuo</h2>
+    <div class="audience">
+      <div><h3>IES de pequeno e médio porte</h3><p>Instituições que buscam estruturar processos, fortalecer a gestão e ampliar sua capacidade de execução.</p></div>
+      <div><h3>Mantenedoras e grupos educacionais</h3><p>Organizações que precisam integrar unidades, alinhar diretrizes e sustentar crescimento com governança.</p></div>
+    </div>
+    <div class="cols3 four">
+      <div><h3>Visão sistêmica</h3><p>A instituição como conjunto conectado de decisões, áreas e resultados.</p></div>
+      <div><h3>Pragmatismo executivo</h3><p>Diagnóstico convertido em prioridades, responsáveis e planos viáveis.</p></div>
+      <div><h3>Consistência institucional</h3><p>Equilíbrio entre identidade acadêmica, sustentabilidade e regulação.</p></div>
+      <div><h3>Desenvolvimento de pessoas</h3><p>Lideranças e equipes com mais autonomia e capacidade de realização.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Formatos de atuação</h2>
+    <p class="lead">O escopo é definido conforme o desafio, o porte da instituição e o nível de aprofundamento necessário.</p>
+    <div class="formats">
+      <div><h3>Diagnóstico institucional</h3><p>Leitura estruturada da situação atual, identificação de riscos e oportunidades e definição de prioridades.</p><em>Para quem precisa de clareza antes de decidir.</em></div>
+      <div><h3>Projeto de consultoria</h3><p>Atuação por escopo e prazo definidos, com entregas, responsáveis e marcos de acompanhamento.</p><em>Para desafios específicos, como expansão ou preparação para avaliação.</em></div>
+      <div><h3>Acompanhamento executivo</h3><p>Apoio periódico a dirigentes e lideranças na análise de decisões e na evolução dos planos.</p><em>Para dirigentes que querem um interlocutor recorrente.</em></div>
+      <div><h3>Formação e mentoria</h3><p>Encontros individuais ou coletivos para desenvolver competências e fortalecer a gestão.</p><em>Para coordenadores e gestores que precisam ampliar autonomia.</em></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="metodo">
+  <div class="wrap">
+    <h2>Da compreensão à realização</h2>
+    <p class="lead">Uma atuação próxima das lideranças, orientada por diagnóstico, construção conjunta e acompanhamento da implementação.</p>
+    <ol class="steps">
+      <li><h3>Compreender</h3><p>Contexto, objetivos, desafios e expectativas das lideranças.</p><small>Entrega: mapa do contexto e das expectativas</small></li>
+      <li><h3>Diagnosticar</h3><p>Análise de processos, estrutura, indicadores e oportunidades de melhoria.</p><small>Entrega: riscos, oportunidades e prioridades</small></li>
+      <li><h3>Estruturar</h3><p>Prioridades, plano de ação, responsabilidades e instrumentos de gestão.</p><small>Entrega: plano com responsáveis e indicadores</small></li>
+      <li><h3>Acompanhar</h3><p>Monitoramento dos avanços, ajustes de rota e consolidação de resultados.</p><small>Entrega: relatórios e rotina de acompanhamento</small></li>
+    </ol>
+    <div class="begin">
+      <h3>Como começamos</h3>
+      <p class="lead" style="margin:0">Conversa inicial sobre o contexto e os resultados pretendidos; proposta com escopo, entregas e cronograma; execução colaborativa com as lideranças; e avaliação dos avanços com os próximos passos.</p>
+      <blockquote>Cada trabalho começa com uma boa pergunta: qual resultado a instituição precisa alcançar — e o que hoje impede esse avanço?</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about">
+    <div>
+      <h2>Francisco Ramirez</h2>
+      <p class="lead">Mais de 16 anos de atuação no Ensino Superior, em docência, coordenação de cursos e direção, nas modalidades presencial, semipresencial e a distância.</p>
+      <div class="facts">
+        <div><b>16+</b><span>anos no Ensino Superior</span></div>
+        <div><b>3</b><span>modalidades: presencial, semipresencial e EAD</span></div>
+      </div>
+      <dl>
+        <dt>Formação</dt>
+        <dd>Mestrado em Comunicação (UNIMAR); MBA em Marketing e Negócios, Design Gráfico e Ciência da Computação (UNIVEM)</dd>
+        <dt>Publicação</dt>
+        <dd>Artigo sobre a regulação da EAD no Brasil, Revista EdUCA (2025)</dd>
+      </dl>
+    </div>
+    <ul class="timeline" aria-label="Trajetória profissional">
+      <li><time>2022–hoje</time><div><b>Diretor de Operações Acadêmicas</b><span>Faculdade Católica Paulista</span></div></li>
+      <li><time>2019–2022</time><div><b>Gerência e Direção Acadêmica</b><span>Faculdade Católica Paulista</span></div></li>
+      <li><time>2018–2019</time><div><b>Consultoria em desenvolvimento de pessoas</b><span>Pensare</span></div></li>
+      <li><time>2014–2017</time><div><b>Diretor Geral (Campus Director)</b><span>FAIP · P&amp;L, crescimento e marca</span></div></li>
+      <li><time>2010–2017</time><div><b>Coordenação de cursos e docência</b><span>FAIP · inclui credenciamento EAD</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="dark contact" id="contato">
+  <div class="wrap">
+    <div>
+      <h2>Vamos conversar?</h2>
+      <p class="lead">Conte qual resultado sua instituição precisa alcançar. Respondo para combinarmos uma conversa inicial.</p>
+      <ul>
+        <li><small>E-mail</small><a href="mailto:chicoramirez.consultoria@gmail.com">chicoramirez.consultoria@gmail.com</a></li>
+        <li><small>Telefone e WhatsApp</small><a href="https://wa.me/5514991620998" rel="noopener">(14) 99162-0998</a></li>
+        <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/francisco-ramirez-martins-jr/" rel="noopener">linkedin.com/in/francisco-ramirez-martins-jr</a></li>
+        <li><small>Currículo Lattes</small><a href="http://lattes.cnpq.br/5775528272936671" rel="noopener">lattes.cnpq.br/5775528272936671</a></li>
+      </ul>
+    </div>
+    <p class="motto"><span>Experiência para compreender.</span><span>Visão para transformar.</span><span>Gestão para realizar.</span></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Francisco Ramirez. Consultoria Executiva em Ensino Superior.</span><span>chicoramirez.com.br</span></div>
+</footer>
+</body>
+</html>
